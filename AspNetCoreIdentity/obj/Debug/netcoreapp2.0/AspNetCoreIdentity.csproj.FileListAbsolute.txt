@@ -1,0 +1,12 @@
+C:\Users\user\source\repos\AspNetCoreIdentity\AspNetCoreIdentity\bin\Debug\netcoreapp2.0\AspNetCoreIdentity.deps.json
+C:\Users\user\source\repos\AspNetCoreIdentity\AspNetCoreIdentity\bin\Debug\netcoreapp2.0\AspNetCoreIdentity.runtimeconfig.json
+C:\Users\user\source\repos\AspNetCoreIdentity\AspNetCoreIdentity\bin\Debug\netcoreapp2.0\AspNetCoreIdentity.runtimeconfig.dev.json
+C:\Users\user\source\repos\AspNetCoreIdentity\AspNetCoreIdentity\bin\Debug\netcoreapp2.0\AspNetCoreIdentity.dll
+C:\Users\user\source\repos\AspNetCoreIdentity\AspNetCoreIdentity\bin\Debug\netcoreapp2.0\AspNetCoreIdentity.pdb
+C:\Users\user\source\repos\AspNetCoreIdentity\AspNetCoreIdentity\obj\Debug\netcoreapp2.0\AspNetCoreIdentity.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\AspNetCoreIdentity\AspNetCoreIdentity\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\user\source\repos\AspNetCoreIdentity\AspNetCoreIdentity\obj\Debug\netcoreapp2.0\AspNetCoreIdentity.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\AspNetCoreIdentity\AspNetCoreIdentity\obj\Debug\netcoreapp2.0\AspNetCoreIdentity.AssemblyInfo.cs
+C:\Users\user\source\repos\AspNetCoreIdentity\AspNetCoreIdentity\obj\Debug\netcoreapp2.0\AspNetCoreIdentity.dll
+C:\Users\user\source\repos\AspNetCoreIdentity\AspNetCoreIdentity\obj\Debug\netcoreapp2.0\AspNetCoreIdentity.pdb
+C:\Users\user\source\repos\AspNetCoreIdentity\AspNetCoreIdentity\obj\Debug\netcoreapp2.0\AspNetCoreIdentity.csprojAssemblyReference.cache
