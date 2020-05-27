@@ -39,21 +39,16 @@ namespace AspNetCoreIdentity
             services.AddTransient<IEmailSender, EmailSender>();
 
             services.AddMvc();
-            
-            //services.AddAuthorization(options =>
-            //{
-            //    options.AddPolicy("Over25AgeOnly", policy => policy.Requirements.Add(new MinimumAgeRequirement(25)));
-            //});
-
-            //services.AddAuthorization(options =>
-            //{
-            //    options.AddPolicy("OnlyAdmin", policy => policy.RequireClaim("isAdmin", "true"));
-            //});
 
             services.AddAuthorization(options =>
             {
-                options.AddPolicy("RequireOverallRoles", policy => policy.RequireRole("Admin", "Client"));
+                options.AddPolicy("Over21AgeOnly", policy => policy.Requirements.Add(new MinimumAgeRequirement(21)));
             });
+
+            services.AddAuthorization(options =>
+        {
+            options.AddPolicy("RequireOverallRoles", policy => policy.RequireRole("Admin", "Client"));
+        });
 
             // existing code above
             services.AddSingleton<IAuthorizationHandler, MinimumAgeHandler>();

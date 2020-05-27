@@ -13268,11 +13268,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\source\\repos\\AspNetCoreIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\ASP.NET-Core-Identity\\AspNetCoreIdentity\\AspNetCoreIdentity.csproj",
       "projectName": "AspNetCoreIdentity",
-      "projectPath": "C:\\Users\\user\\source\\repos\\AspNetCoreIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity.csproj",
+      "projectPath": "C:\\Users\\user\\Documents\\GitHub\\ASP.NET-Core-Identity\\AspNetCoreIdentity\\AspNetCoreIdentity.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\source\\repos\\AspNetCoreIdentity\\AspNetCoreIdentity\\obj\\",
+      "outputPath": "C:\\Users\\user\\Documents\\GitHub\\ASP.NET-Core-Identity\\AspNetCoreIdentity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

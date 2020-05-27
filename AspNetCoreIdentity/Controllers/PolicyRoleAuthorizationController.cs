@@ -7,8 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AspNetCoreIdentity.Controllers
 {
-    [Authorize(Roles = "Admin, Client")]
-    public class RoleAuthorizationController : Controller
+    [Authorize(Policy = "RequireOverallRoles")]
+    public class PolicyRoleAuthorizationController : Controller
     {
         public IActionResult Index()
         {

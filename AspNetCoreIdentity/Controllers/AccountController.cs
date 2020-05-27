@@ -232,6 +232,9 @@ namespace AspNetCoreIdentity.Controllers
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email, BirthDate = model.BirthDate };
                 var result = await _userManager.CreateAsync(user, model.Password);
 
+                if (!result.Succeeded)
+                    return View();
+
                 var roleResult = await _userManager.AddToRoleAsync(user, model.UserType == UserType.Client ? "Client" : "Admin");
 
                 var claimList = (await _userManager.GetClaimsAsync(user)).Select(p => p.Type);

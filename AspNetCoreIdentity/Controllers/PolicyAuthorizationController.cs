@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AspNetCoreIdentity.Controllers
 {
-    [Authorize(Policy = "Over25AgeOnly")]
+    [Authorize(Policy = "Over21AgeOnly")]
     public class PolicyAuthorizationController : Controller
     {
         public IActionResult Index()
