@@ -28,14 +28,28 @@
                 </button>
                 <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">AspNetCoreIdentity</a>
             </div>
+            @using Microsoft.AspNetCore.Authorization
+            @inject IAuthorizationService AuthorizationService
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                    <li><a asp-area="" asp-controller="PolicyAuthorization" asp-action="Index">Policy Authorization</a></li>
-                    <li><a asp-area="" asp-controller="RoleAuthorization" asp-action="Index">Role Authorization</a></li>
-                    <li><a asp-area="" asp-controller="PolicyRoleAuthorization" asp-action="Index">Policy Role Authorization</a></li>
+                    @if ((await AuthorizationService.AuthorizeAsync(User, "Over21AgeOnly")).Succeeded)
+                    {
+                        <li><a asp-area="" asp-controller="PolicyAuthorization" asp-action="Index">Policy Authorization</a></li>
+                    }
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        if (User.IsInRole("Client") || User.IsInRole("Admin"))
+                        {
+                            <li><a asp-area="" asp-controller="RoleAuthorization" asp-action="Index">Role Authorization</a></li>
+                        }
+                    }
+                    @if ((await AuthorizationService.AuthorizeAsync(User, "RequireOverallRoles")).Succeeded)
+                    {
+                        <li><a asp-area="" asp-controller="PolicyRoleAuthorization" asp-action="Index">Policy Role Authorization</a></li>
+                    }
                 </ul>
                 @await Html.PartialAsync("_LoginPartial")
             </div>
